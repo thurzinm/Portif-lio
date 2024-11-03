@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style4.css">
+    <script>
+        var $doc = $('html, body');
+        $('.scrollSuvave').click(function() {
+        $doc.animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 1200);
+        return false;
+        });
+    </script>
+</head>
+<body>
+    
+    <header id="cabeçalho">
+        <nav class="navigation">
+            <a href="Index.html">HOME</a>
+            <a href="abilidades.html">SKILS</a>
+            <a href="Sobre mim.html">ARTHUR LOPES</a>
+            <a href="Entre em contado.html">CONTACT ME</a>
+        </nav>
+    </header>
+
+    <Main>
+        <div id="eu">
+                <nav id="Sobre-mim">
+                    <h1>Soft Skils</h1>
+
+                    Boa comunicação <br>
+                    Comunicação interpessoal <br>
+                    Rápida aprendizagem <br>
+                    Ótimo trabalho em grupo <br>
+                    Pensamento lógico <br>
+                </nav>
+        </div>
+
+        <div id="eu">
+                <nav id="Sobre-mim">
+                    <h1>Hard Skils</h1>
+
+                    Programação em C# <br>
+                    Programação em Java Script <br>
+                    Conhecimento em Linux e Windows <br>
+                    Programação em HTML e CSS <br>
+                    Modelagem de banco de dados <br>
+                </nav>
+        </div>
+    </Main>
+
+</body>
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-23581568-13');
+  </script>
+
+</html>

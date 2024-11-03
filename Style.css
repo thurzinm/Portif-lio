@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #414141;
+    overflow-x: hidden;
+}
+
+header{
+    width: auto;
+    padding: 0;
+    height: 50px;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+}
+
+#cabeçalho{
+    margin: 0;
+    border: 0;
+    padding-top: 0;
+    padding-left: 5px;
+    display: flex;
+    height: 60px;
+    background-color: #FEBC5A;
+}
+
+#Apresentação{
+    padding-top: 390px;
+    background-color: #dfdfdf;
+    text-align: center;
+    align-items: center;
+    height: 904px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    font-size: 4.5rem;
+}
+
+#projects{
+    align-items: center;
+    text-align: center;
+    font-size: 4.5rem;
+    padding-top: 25px;
+    color: white;
+}
+
+#projetos{
+    display: flex;
+    justify-content: space-evenly;
+    height: 40vh;
+    padding-top: 65px;
+}
+
+#Projetos > img{
+    width: 33%;
+    height: 100px;
+}
+
+
+.image{
+    background-color: #dfdfdf;
+    width: 13%;
+    height: 20vh;
+    object-fit: cover;
+    justify-items: left;
+}
+
+.navigation > a {
+    position: relative;
+    font-size: 1.25em;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+}
+
+.navigation > .Home {
+    position: relative;
+    font-size: 1.4em;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 0px;
+    letter-spacing: 0.06em;
+}
+
+.navigation > a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: black;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;    
+}
+
+.navigation > a:hover:after {
+    transform: scaleX(1);
+}
+
+
+.navigation{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 4% 0px;
+}
+
+#eu{
+    padding-top: 70px;
+    padding-left: 294px;
+    display: flex;
+    text-align: right;
+    align-items: center;
+}
+
+section > img{
+    height: 300px;
+    width: 230px;
+}
+
+#Sobre{
+    padding-left: 30px;
+    color: white;
+    text-align: left;
+    font-size: 1.25rem;
+    margin-bottom: 90px;
+}
+
+#Contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40vh;
+}
+
+#nome{
+    font-size: 30px;
+    height: 60px;
+    width: 30px;
+}
+
+#Abouth{
+    background-color: #dfdfdf;
+}
+
+footer{
+    padding-top: 30px;
+}
+
+@media only screen and (max-width: 768px){
+
+    header{
+        font-size: 85%;
+    }
+
+    h1{
+        font-size: 4rem;
+    }
+
+    #projetos > img{
+        height: 60%;
+        width: 30%;
+    }
+
+    #eu{
+        padding-left: 5%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #eu > section > img{
+        height: 10%;
+        width: 115px;
+    }
+
+    #eu > nav{
+        text-align: left;
+    }
+}
